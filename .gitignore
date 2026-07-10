@@ -1,0 +1,6 @@
+build/
+*.o
+*.log
+data/*.rdb
+data/*.aof
+.DS_Store
