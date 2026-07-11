@@ -3,4 +3,5 @@ build/
 *.log
 data/*.rdb
 data/*.aof
+data/*.txt
 .DS_Store

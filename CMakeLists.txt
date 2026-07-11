@@ -19,11 +19,9 @@ add_executable(kv_cli
   src/kv_store.cpp
 )
 
-# Server target — will grow as you add networking (Day 2+)
-# Uncomment as you build src/server.cpp, src/protocol.cpp, etc.
-# add_executable(mini_redis_server
-#   src/main_server.cpp
-#   src/kv_store.cpp
-#   src/server.cpp
-#   src/protocol.cpp
-# )
+# The full TCP server: LRU cache + sockets + threading + persistence
+add_executable(mini_redis_server
+  src/main_server.cpp
+  src/lru_cache.cpp
+  src/server.cpp
+)
